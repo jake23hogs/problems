@@ -5,5 +5,3 @@ check50:
         stdout: Hello, World!
         exit: 0
 
-submit50:
-  files: *check50_files
