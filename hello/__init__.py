@@ -11,11 +11,7 @@ def exists():
         self.spawn("javac Hello.java").exit(0)
 
 @check50.check(compiles)
-def veronica():
-    """responds to name Veronica."""
-    check50.run("java Hello").stdin("Veronica").stdout("Veronica").exit()
+def Case1():
+    """Outputs correctly Hello, World!\n."""
+    self.spawn("java Hello").stout("Hello, World!\n").exit()
 
-@check50.check(compiles)
-def brian():
-    """responds to name Brian."""
-    check50.run("java Hello").stdin("Brian").stdout("Brian").exit()
