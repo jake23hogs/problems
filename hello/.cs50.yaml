@@ -1,3 +1,4 @@
+submit50: true
 check50:
   checks:
     hello:
@@ -5,4 +6,4 @@ check50:
         stdout: Hello, World!
         exit: 0
 
-submit50: true
+
