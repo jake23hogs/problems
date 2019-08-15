@@ -1,8 +1,8 @@
-  
 submit50: true
 check50:
   checks:
-    hello:
+    case1:
       - run: java Credit.java
-        stdout: Hello, World!
-        exit: 
+        stdin: 378282246310005
+        stdout: AMEX
+        exit: 0
