@@ -2,8 +2,8 @@ import check50
 
 @check50.check()
 def exists():
-    """hello.java exists."""
-    check50.exists("hello.java")
+    """Hello.java exists."""
+    check50.exists("Hello.java")
 
 @check("exists")
     def compiles(self):
