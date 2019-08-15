@@ -1,6 +1,6 @@
 check50:
   checks:
-    hello world:
+    hello:
       - run: java Hello.java
         stdout: Hello, World!
         exit: 0
