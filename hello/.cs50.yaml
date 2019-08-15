@@ -6,4 +6,4 @@ check50:
         exit: 0
 
 submit50:
-  files: Hello.java
+  files: *check50_files
