@@ -1,0 +1,8 @@
+  
+submit50: true
+check50:
+  checks:
+    hello:
+      - run: java Credit.java
+        stdout: Hello, World!
+        exit: 
