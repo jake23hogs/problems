@@ -13,5 +13,5 @@ def exists():
 @check50.check(compiles)
 def Case1():
     """Outputs correctly Hello, World!\n."""
-    self.spawn("java Hello").stout("Hello, World!\n").exit()
+    self.spawn("java Hello").stdout("Hello, World!\n").exit()
 
