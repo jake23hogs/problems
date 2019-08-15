@@ -1,22 +1,21 @@
 import check50
-import check50.c
 
 @check50.check()
 def exists():
-    """hello.c exists."""
-    check50.exists("hello.c")
+    """hello.java exists."""
+    check50.exists("hello.java")
 
-@check50.check(exists)
-def compiles():
-    """hello.c compiles."""
-    check50.c.compile("hello.c", lcs50=True)
+@check("exists")
+    def compiles(self):
+        """Hello compiles"""
+        self.spawn("javac Hello.java").exit(0)
 
 @check50.check(compiles)
 def veronica():
     """responds to name Veronica."""
-    check50.run("./hello").stdin("Veronica").stdout("Veronica").exit()
+    check50.run("java Hello").stdin("Veronica").stdout("Veronica").exit()
 
 @check50.check(compiles)
 def brian():
     """responds to name Brian."""
-    check50.run("./hello").stdin("Brian").stdout("Brian").exit()
+    check50.run("java Hello").stdin("Brian").stdout("Brian").exit()
