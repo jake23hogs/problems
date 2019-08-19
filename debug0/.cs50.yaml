@@ -3,6 +3,6 @@
     checks:
       debug0:
       - run: java Debug0.java
-        stdout: Hello, World!\nGreenbrier HS\nFix the problems and you win!
+        stdout: Hello, World!\nGreenbrier HS\nFix the problems and you're done!
         exit: 0
      
