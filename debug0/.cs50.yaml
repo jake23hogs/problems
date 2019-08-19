@@ -1,3 +1,10 @@
   submit50: true
-  
-  
+  check50:
+    checks:
+      debug0:
+      - run: java Debug0.java
+        stdout: Hello, World!
+        stdout: Greenbrier HS
+        stdout: Fix the problems and you win!
+        exit: 0
+     
