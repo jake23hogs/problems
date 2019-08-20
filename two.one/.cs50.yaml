@@ -4,7 +4,7 @@
       test1:
       - run: java Problem2_1.java
         stdin: "43.5"
-        stdout: 43.5 Celsius is 110.3 Fahrenheit
+        stdout: 43.5 Celsius is 110.3 Fahrenheit\n
         exit: 0
         
       test2:
