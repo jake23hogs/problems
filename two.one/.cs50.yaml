@@ -1,6 +1,5 @@
   submit50: true
-  check50: true
-    
+  check50: 
     checks:
       test1:
       - run: java Problem2_1.java
