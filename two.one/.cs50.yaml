@@ -1,21 +1,3 @@
   submit50: true
-  check50:
-    checks:
-      test1:
-      - run: java Problem2_1.java
-        stdin: "43.5"
-        stdout: "43.5 Celsius is 110.3 Fahrenheit"
-        exit: 0
-        
-      test2:
-      - run: java Problem2_1.java
-        stdin: "0.0"
-        stdout: 0.0 Celsius is 32.0 Fahrenheit
-        exit: 0
-      
-      test3:
-      - run: java Problem2_1.java
-        stdin: "100.0"
-        stdout: 100.0 Celsius is 412.0 Fahrenheit
-        exit: 0
-        
+  check50: true
+    
