@@ -1,8 +1,5 @@
 check50: true
-  files: 
-    - !exclude "*"
-    - !require Fahrenheit.java
-    
+  
 submit50: 
   files: 
     - !exclude "*"
