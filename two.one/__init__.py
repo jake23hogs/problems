@@ -2,19 +2,19 @@ import check50
 import re
 
 @check50.check()
-def exists(self):
+def exists():
     """Fahrenheit.java exists"""
-    self.require("Fahrenheit.java")
+    check50.exists("Fahrenheit.java")
 
 @check50.check(exists)
-def compiles(self):
+def compiles():
     """Fahrenheit.java compiles"""
-    self.spawn("javac Fahrenheit.java").exit(0)
+    check50.run("javac Fahrenheit.java").exit(0)
 
-@check50.check("compiles")
-def test37(self):
+@check50.check(compiles)
+def test37():
     """37 degrees Celsius yields 98.6 degrees Fahrenheit"""
-    self.spawn("java Fahrenheit").stdin("37").stdout(number(98.6), "98.6\n").exit(0)
+    check50.run("java Fahrenheit").stdin("37").stdout(number(98.6), "98.6\n").exit(0)
 
 @check50.check("compiles")
 def test0(self):
