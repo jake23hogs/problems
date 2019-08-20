@@ -1,5 +1,6 @@
-submit50: true
-check50: true
+
+check50: 
   files:
-    - !exclude "*.class"
-      
+    - !exclude "*"
+    - !require Fahrenheit.java
+submit50: true
