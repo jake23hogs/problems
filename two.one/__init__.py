@@ -10,7 +10,8 @@ def exists():
 @check50.check(exists)
 def test37():
     """37 degrees Celsius yields 98.6 degrees Fahrenheit"""
-    check50.run("java Fahrenheit.java").stdin("37").stdout("98.6").exit(0)
+    expected = "98.6\n"
+    check50.run("java Fahrenheit").stdin("37").stdout().exit(0)
 
 @check50.check(exists)
 def test0():
