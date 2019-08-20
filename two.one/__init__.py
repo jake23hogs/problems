@@ -6,6 +6,10 @@ def exists():
     """Fahrenheit.java exists"""
     check50.exists("Fahrenheit.java")
 
+@check50.check()
+def compiles():
+    """Fahrenheit.java compiles"""
+    check50.compile("Fahrenheit.java")
 
 @check50.check(exists)
 def test37():
