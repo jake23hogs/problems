@@ -1,3 +1,5 @@
 submit50: true
 check50: true
+  files:
+    - !exclude "*.class"
       
