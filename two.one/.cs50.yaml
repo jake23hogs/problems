@@ -1,4 +1,4 @@
   submit50: true
   check50: 
-    checks: checks.py
+    checks: __init__.py
       
