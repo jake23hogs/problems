@@ -19,7 +19,7 @@ def test37():
 @check50.check(exists)
 def test0():
     """0 degrees Celsius yields 32.0 degrees Fahrenheit"""
-    check50.run("java Fahrenheit.java").stdin("0").stdout(number(32.0), "32.0\n").exit(0)
+    check50.run("java Fahrenheit.java").stdin("0").stdout(number(32.0)).exit(0)
 
 @check50.check(exists)
 def test100():
