@@ -3,4 +3,7 @@ check50:
     - !exclude "*"
     - !require Fahrenheit.java
     
-submit50: true
+submit50: 
+  files: 
+    - !exclude "*"
+    - !require Fahrenheit.java
