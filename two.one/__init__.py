@@ -6,15 +6,10 @@ def exists():
     """Fahrenheit.java exists"""
     check50.exists("Fahrenheit.java")
 
-@check50.check()
-def compiles():
-    """Fahrenheit.java compiles"""
-    check50.run("java Fahrenheit.java").exit(0)
-
 @check50.check(exists)
 def test37():
     """37 degrees Celsius yields 98.6 degrees Fahrenheit"""
-    check50.run("java Fahrenheit.java").stdin("37").stdout("98.6\n").exit(0)
+    check50.run("java Fahrenheit.java").stdin(37).stdout("98.6\n").exit(0)
 
 @check50.check(exists)
 def test0():
