@@ -9,7 +9,7 @@ def exists():
 @check50.check()
 def compiles():
     """Fahrenheit.java compiles"""
-    check50.compile("Fahrenheit.java")
+    check50.run("javac Fahrenheit.java").exit(0)
 
 @check50.check(exists)
 def test37():
