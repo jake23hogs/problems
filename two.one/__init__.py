@@ -9,17 +9,17 @@ def exists():
 @check50.check(exists)
 def test37():
     """37 degrees Celsius yields 98.6 degrees Fahrenheit"""
-    check50.run("java Fahrenheit.java").stdin(37).stdout("98.6\n").exit(0)
+    check50.run("java Fahrenheit").stdin(37).stdout("98.6\n").exit(0)
 
 @check50.check(exists)
 def test0():
     """0 degrees Celsius yields 32.0 degrees Fahrenheit"""
-    check50.run("java Fahrenheit.java").stdin("0").stdout(number(32.0)).exit(0)
+    check50.run("java Fahrenheit").stdin("0").stdout(number(32.0)).exit(0)
 
 @check50.check(exists)
 def test100():
     """100.00 degrees Celsius yields 212.0 degrees Fahrenheit"""
-    check50.run("java Fahrenheit.java").stdin("100.00").stdout(number(212.0), "212.0\n").exit(0)
+    check50.run("java Fahrenheit").stdin("100.00").stdout(number(212.0), "212.0\n").exit(0)
 
 @check50.check(exists)
 def testneg40():
