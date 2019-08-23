@@ -1,4 +1,3 @@
-check50:
-  checks: 
+check50: true
  
 submit50: true
