@@ -8,8 +8,8 @@ def exists():
 
 @check50.check(exists)
 def test2():
-    """2 yields a surface area of 8 """
-    check50.run("java Project3_2").stdin("2").stdout(number(8), "8\n").exit(0)
+    """2 yields Diameter of , Circumference of , Surface Area of  and Volume of """
+    check50.run("java Project3_2").stdin("2").stdout("Diameter = \nCircumference = \nSurface Area = \nVolume = \n", "Diameter = \nCircumference = \nSurface Area = \nVolume = \n").exit(0)
 
 @check50.check(exists)
 def test0():
@@ -19,7 +19,7 @@ def test0():
 @check50.check(exists)
 def test_reject_empty_string():
     """rejects a non-numeric input of "" """
-    check50.run("java Project3_2").stdin("").reject()
+    check50.run("java Project3_1").stdin("").reject()
 
 def number(num):
     return "(^|[^\d]){}[^\d]".format(num)
