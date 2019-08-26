@@ -9,12 +9,12 @@ def exists():
 @check50.check(exists)
 def test2():
     """2 yields a surface area of 8 """
-    check50.run("java Project3_1").stdin("2").stdout(number(8), "8\n").exit(0)
+    check50.run("java Project3_1").stdin("2").stdout("^Surface Area = 8\n", "Surface Area = 8\n").exit(0)
 
 @check50.check(exists)
 def test0():
     """0 yields a surface area of 0"""
-    check50.run("java Project3_1").stdin("0").stdout(number(0), "0\n").exit(0)
+    check50.run("java Project3_1").stdin("0").stdout("^Surface Area = 0\n", "Surface Area = 0\n").exit(0)
 
 @check50.check(exists)
 def test_reject_empty_string():
