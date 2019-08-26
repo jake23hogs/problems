@@ -8,8 +8,8 @@ def exists():
 
 @check50.check(exists)
 def test2():
-    """2 yields a surface area of 8 """
-    check50.run("java Project3_1").stdin("2").stdout("^Surface Area = 8\n", "Surface Area = 8\n").exit(0)
+    """2 yields a surface area of 24 """
+    check50.run("java Project3_1").stdin("2").stdout("^Surface Area = 24\n", "Surface Area = 24\n").exit(0)
 
 @check50.check(exists)
 def test0():
