@@ -14,7 +14,7 @@ def test2():
 @check50.check(exists)
 def test0():
     """0 yields a surface area of 0"""
-    check50.run("java Project3_1").stdin("0").stdout("Surface Area = ", "Surface Area = ").exit(0)
+    check50.run("java Project3_1").stdin("0").stdout(number(0), "0\n).exit(0)
 
 @check50.check(exists)
 def test_reject_empty_string():
