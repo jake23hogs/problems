@@ -8,13 +8,8 @@ def exists():
 
 @check50.check(exists)
 def test2():
-    """2 yields Diameter of , Circumference of , Surface Area of  and Volume of """
-    check50.run("java Project3_2").stdin("2").stdout("Diameter = \nCircumference = \nSurface Area = \nVolume = \n", "Diameter = \nCircumference = \nSurface Area = \nVolume = \n").exit(0)
-
-@check50.check(exists)
-def test0():
-    """0 yields a surface area of 0"""
-    check50.run("java Project3_2").stdin("0").stdout(number(0), "0\n").exit(0)
+    """A radius of 4 yields Diameter of 8.0, Circumference of 25.13272, Surface Area of 201.06176 and Volume of 268.08234666666664"""
+    check50.run("java Project3_2").stdin("2").stdout("Diameter = 8.0\nCircumference = 25.13272\nSurface Area = 201.06176\nVolume = 268.08234666666664\n", "Diameter = 8.0\nCircumference = 25.13272\nSurface Area = 201.06176\nVolume = 268.08234666666664\n").exit(0)
 
 @check50.check(exists)
 def test_reject_empty_string():
