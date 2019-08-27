@@ -14,7 +14,7 @@ def compiles():
 @check50.check(exists)
 def test_reject_negative():
     """rejects a height of -1"""
-    check50.run("java Mario").stdin("-1").exit(0)
+    check50.run("java Mario").stdin("-1").reject()
 
 @check50.check(exists)
 def test0():
