@@ -5,7 +5,7 @@ import re
 def exists():
     """Mario.java exists."""
     check50.exists("Mario.java")
-    check50.include("1.txt", "2.txt", "8.txt")
+    check50.include("1.txt", "2.txt", "23.txt")
 @check50.check(exists)
 def compiles():
     """Mario.java Compiles"""
@@ -35,14 +35,14 @@ def test2():
 
 @check50.check(exists)
 def test23():
-    """handles a height of 8 correctly"""
-    out = check50.run("java Mario").stdin("8").stdout()
+    """handles a height of 23 correctly"""
+    out = check50.run("java Mario").stdin("23").stdout()
     check_pyramid(out, open("8.txt").read())
 
 @check50.check(exists)
 def test24():
-    """rejects a height of 9, and then accepts a height of 2"""
-    (check50.run("java Mario").stdin("9").reject()
+    """rejects a height of 24, and then accepts a height of 2"""
+    (check50.run("java Mario").stdin("23").reject()
             .stdin("2").stdout(open("2.txt")).exit(0))
 
 @check50.check(exists)
