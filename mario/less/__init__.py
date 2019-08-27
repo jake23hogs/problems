@@ -46,11 +46,6 @@ def test24():
             .stdin("2").stdout(open("2.txt")).exit(0))
 
 @check50.check(exists)
-def test_reject_foo():
-    """rejects a non-numeric height of "foo" """
-    check50.run("java Mario").stdin("foo").reject()
-
-@check50.check(exists)
 def test_reject_empty():
     """rejects a non-numeric height of "" """
     check50.run("java Mario").stdin("").reject()
