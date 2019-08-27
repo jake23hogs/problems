@@ -1,6 +1,3 @@
-check50:
-  files: 
-    - !exclude "*"
-    - !require Mario.java
+check50: true
 
 submit50: true
