@@ -37,7 +37,7 @@ def test2():
 def test23():
     """handles a height of 23 correctly"""
     out = check50.run("java Mario").stdin("23").stdout()
-    check_pyramid(out, open("8.txt").read())
+    check_pyramid(out, open("23.txt").read())
 
 @check50.check(exists)
 def test24():
