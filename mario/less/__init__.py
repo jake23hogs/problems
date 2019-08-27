@@ -15,7 +15,7 @@ def test_reject_negative():
 @check50.check(exists)
 def test0():
     """rejects a height of 0"""
-    check50.run("java Mario").stdin("0").reject()
+    check50.run("java Mario").stdin("0").stdout(EOF).exit(0)
 
 @check50.check(exists)
 def test1():
