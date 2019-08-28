@@ -5,7 +5,11 @@ import re
 def exists():
     """Project3_2.java exists"""
     check50.exists("Project3_2.java")
-
+@check50.check()
+def compiles():
+    """Project3_2.java compiles"""
+    check50.run("javac Project3_2.java")
+    
 @check50.check(exists)
 def test4():
     """A radius of 4 yields Diameter of 8.0, Circumference of 25.13272, Surface Area of 201.06176 and Volume of 268.08234666666664"""
