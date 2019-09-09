@@ -63,12 +63,6 @@ def test_reject_negative():
 
 
 @check50.check(compiles)
-def test_reject_foo():
-    """rejects a non-numeric input of "foo" """
-    check50.run("java Cash").stdin("foo").reject()
-
-
-@check50.check(compiles)
 def test_reject_empty():
     """rejects a non-numeric input of "" """
     check50.run("java Cash").stdin("").reject()
