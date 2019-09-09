@@ -1,11 +1,10 @@
 import check50
-import check50.c
 
 
 @check50.check()
 def exists():
     """cash exists"""
-    check50.exists("cash.c")
+    check50.exists("Cash.java")
 
 
 @check50.check(exists)
