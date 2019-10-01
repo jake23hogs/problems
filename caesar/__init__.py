@@ -43,7 +43,3 @@ def checks_for_handling_non_alpha():
     """encrypts "world, say hello!" as "iadxp, emk tqxxa!" using 12 as key"""
     check50.run("java Caesar 12").stdin("world, say hello!").stdout("ciphertext:\s*iadxp, emk tqxxa!\n", "ciphertext: iadxp, emk tqxxa!\n").exit(0)
 
-@check50.check(compiles)
-def handles_no_argv():
-    """handles lack of argv[1]"""
-    check50.run("java Caesar").exit(1)
