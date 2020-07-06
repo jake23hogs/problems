@@ -6,8 +6,9 @@ check50:
         stdin: 378282246310005
         stdout: AMEX
         exit: 0
+    
     case2:
-     - run: java Credit.java
-       stdin: 5555555555554444
-       stdout: MASTERCARD
-       exit: 0
+      - run: java Credit.java
+        stdin: 5555555555554444
+        stdout: MASTERCARD
+        exit: 0
