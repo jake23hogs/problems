@@ -16,5 +16,5 @@ def compiles():
 @check50.check(compiles)
 def correctConversion():
     """converts 0 C to 32 F"""
-    check50.run("java Fahrenheit").stdin(0).stdout(32.0, 32.0).exit(0)
+    check50.run("java Fahrenheit").stdin("0").stdout("32.0", "32.0").exit(0)
 
