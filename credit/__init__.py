@@ -1,20 +1,25 @@
 import check50
-import check50.c
+
 
 @check50.check()
 def exists():
-    """credit.c exists."""
-    check50.exists("credit.c")
-
+    """Credit exists."""
+    check50.exists("Credit.java")
+    
 @check50.check(exists)
 def compiles():
-    """credit.c compiles."""
-    check50.c.compile("credit.c", lcs50=True)
+    """Credit compiles."""
+    check50.run("javac Credit.java")
 
 @check50.check(compiles)
 def test1():
     """identifies 378282246310005 as AMEX"""
-    check50.run("./credit").stdin("378282246310005").stdout("AMEX\n").stdout(check50.EOF).exit(0)
+    check50.run("Java Credit").stdin("378282246310005").stdout("AMEX\n").stdout(check50.EOF).exit(0)
+    
+@check50.check(compiles)
+def test1():
+    """identifies 378282246310005 as AMEX"""
+    check50.run("Java Credit").stdin("378282246310005").stdout("AMEX\n", "AMEX\n")..exit(0)
 
 @check50.check(compiles)
 def test2():
