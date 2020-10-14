@@ -137,3 +137,14 @@ def exists12():
 def compiles12():
     """program12 compiles"""
     check50.run("make program12")
+
+@check50.check()
+def exists13():
+    """program13 exists"""
+    check50.exists("program13.c")
+
+
+@check50.check(exists13)
+def compiles13():
+    """program13 compiles"""
+    check50.run("make program13")
