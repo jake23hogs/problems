@@ -12,6 +12,15 @@ def compiles1():
     """program1 compiles"""
     check50.run("make program1")
 
+@check50.check(compiles1)
+def Example1(self):
+    """Program1 Test 1"""
+    check50.run("./program1").stdin("17").stdout("You are not old enough to vote!\n" , "You are not old enough to vote!\n").exit(0)
+
+@check50.check(compiles1)
+def Example2(self):
+    """Program1 Test 2"""
+    check50.run("./program1").stdin("18").stdout("You are old enough to vote!\n" , "You are old enough to vote!\n").exit(0)
 
 @check50.check()
 def exists2():
