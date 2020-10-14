@@ -69,11 +69,6 @@ def test11():
     check50.run("java Credit").stdin("4111111111111113").stdout("^INVALID\n", "INVALID\n").exit(0)
 
 @check50.check(compiles)
-def test_reject_foo():
-    """rejects a non-numeric input of "foo" """
-    check50.run("java Credit").stdin("foo").reject()
-
-@check50.check(compiles)
 def test_reject_empty():
     """rejects a non-numeric input of "" """
     check50.run("java Credit").stdin("").reject()
