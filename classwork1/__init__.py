@@ -137,3 +137,60 @@ def exists12():
 def compiles12():
     """program12 compiles"""
     check50.run("make program12")
+
+@check50.check()
+def exists13():
+    """program13 exists"""
+    check50.exists("program13.c")
+
+
+@check50.check(exists13)
+def compiles13():
+    """program13 compiles"""
+    check50.run("make program13")
+
+
+@check50.check()
+def exists14():
+    """program14 exists"""
+    check50.exists("program14.c")
+
+
+@check50.check(exists14)
+def compiles14():
+    """program14 compiles"""
+    check50.run("make program14")
+
+@check50.check()
+def exists15():
+    """program15 exists"""
+    check50.exists("program15.c")
+
+
+@check50.check(exists15)
+def compiles15():
+    """program15 compiles"""
+    check50.run("make program15")
+
+
+@check50.check()
+def exists16():
+    """program16 exists"""
+    check50.exists("program16.c")
+
+
+@check50.check(exists16)
+def compiles16():
+    """program16 compiles"""
+    check50.run("make program16")
+    
+@check50.check()
+def exists17():
+    """program17 exists"""
+    check50.exists("program17.c")
+
+
+@check50.check(exists17)
+def compiles17():
+    """program17 compiles"""
+    check50.run("make program17")
