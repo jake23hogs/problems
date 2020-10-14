@@ -8,7 +8,7 @@ def exists1():
 
 
 @check50.check(exists1)
-def compiles():
+def compiles1():
     """program1 compiles"""
     check50.run("make program1")
 
@@ -20,7 +20,7 @@ def exists2():
 
 
 @check50.check(exists2)
-def compiles():
+def compiles2():
     """program2 compiles"""
     check50.run("make program2")
     
@@ -31,7 +31,7 @@ def exists3():
 
 
 @check50.check(exists3)
-def compiles():
+def compiles3():
     """program3 compiles"""
     check50.run("make program3")
 
@@ -43,7 +43,7 @@ def exists4():
 
 
 @check50.check(exists4)
-def compiles():
+def compiles4():
     """program4 compiles"""
     check50.run("make program4")
     
@@ -54,7 +54,7 @@ def exists5():
 
 
 @check50.check(exists5)
-def compiles():
+def compiles5():
     """program5 compiles"""
     check50.run("make program5")
 
@@ -66,7 +66,7 @@ def exists6():
 
 
 @check50.check(exists6)
-def compiles():
+def compiles6():
     """program6 compiles"""
     check50.run("make program6")
 
@@ -77,7 +77,7 @@ def exists7():
 
 
 @check50.check(exists7)
-def compiles():
+def compiles7():
     """program7 compiles"""
     check50.run("make program7")
 
@@ -89,7 +89,7 @@ def exists8():
 
 
 @check50.check(exists8)
-def compiles():
+def compiles8():
     """program8 compiles"""
     check50.run("make program8")
     
@@ -100,7 +100,7 @@ def exists9():
 
 
 @check50.check(exists9)
-def compiles():
+def compiles9():
     """program9 compiles"""
     check50.run("make program9")
 
@@ -111,7 +111,7 @@ def exists10():
 
 
 @check50.check(exists10)
-def compiles():
+def compiles10():
     """program10 compiles"""
     check50.run("make program10")
 
@@ -123,7 +123,7 @@ def exists11():
 
 
 @check50.check(exists11)
-def compiles():
+def compiles11():
     """program11 compiles"""
     check50.run("make program11")
     
@@ -134,6 +134,6 @@ def exists12():
 
 
 @check50.check(exists12)
-def compiles():
+def compiles12():
     """program12 compiles"""
     check50.run("make program12")
