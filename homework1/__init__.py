@@ -193,3 +193,38 @@ def exists17():
 def compiles17():
     """program17 compiles"""
     check50.run("javac Program17")
+
+@check50.check()
+def exists18():
+    """program18 exists"""
+    check50.exists("Program18.java")
+
+
+@check50.check(exists18)
+def compiles18():
+    """program18 compiles"""
+    check50.run("javac Program18")
+
+
+@check50.check()
+def exists19():
+    """program19 exists"""
+    check50.exists("Program19.java")
+
+
+@check50.check(exists19)
+def compiles19():
+    """program19 compiles"""
+    check50.run("javac Program19")
+    
+@check50.check()
+def exists20():
+    """program20 exists"""
+    check50.exists("Program20.java")
+
+
+@check50.check(exists20)
+def compiles20():
+    """program20 compiles"""
+    check50.run("javac Program20")
+
